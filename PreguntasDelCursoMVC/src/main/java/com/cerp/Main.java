@@ -22,7 +22,7 @@ import com.cerp.Vista.InicioVista;
  * @brief Clase principal que permite interactuar con la aplicación de preguntas.
  * @Author Domingo Perez
  */
-public claMain {
+public class Main  {
     
     /**
      * @brief Método principal que inicia la ejecución del programa.
@@ -33,7 +33,8 @@ public claMain {
         
         // Crear instancia de FileHandler para cargar las preguntas desde preguntas.data
         //FileHandler<Pregunta> fileHandler = new FileHandler<Pregunta>("D:\\_VSCode\\_Programacion3-JAVA\\Curso-JAVA\\Proyectos\\PreguntasDelCursoMVC\\preguntas.data");
-        FileHandler<Pregunta> fileHandler = new FileHandler<Pregunta>("C:\\Users\\guchu\\PreguntasDelCursoMVC\\src\\main\\resources\\preguntas.data");        List<Pregunta> modelo = new ArrayList<>();
+  FileHandler<Pregunta> fileHandler = new FileHandler<Pregunta>("C:\\Users\\guchu\\PreguntasDelCursoMVC\\preguntas.data");        List<Pregunta> modelo = new ArrayList<>();
+
 
         try {
             modelo = fileHandler.fileToList();
